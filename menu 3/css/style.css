@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header {
+	width: 100%;
+}
+nav {
+	margin: 20px auto;
+	width: 90%;
+	max-width: 1200px;
+}	
+
+nav ul{
+	list-style: none;
+}
+
+nav > ul {
+	display: table;
+	overflow: hidden;
+	width: 100%;
+	background: #000;
+	position: relative;
+}
+nav > ul li{
+	display: table-cell;  
+}
+nav > ul > li > ul {
+	display: none;
+}
+
+nav > ul li a{
+	color: #fff;
+	text-decoration: none;
+	display: block; 
+	padding: 20px;
+	position: relative;
+	text-align: center;
+}
+nav > ul > li > a span{
+	display: block;
+	background: #174459;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: -50px;
+	-webkit-transition: all .3s ease ;
+	-moz-transition: all .3s ease ;
+	-ms-transition: all .3s ease ;
+	-o-transition: all .3s ease ;
+	transition: all .3s ease ;
+}
+nav > ul > li > a span .icon{
+	display: block;
+	line-height: 55px;
+}
+nav > ul > li > a:hover > span{
+	top: 0;
+}
+nav > ul > li > ul > li a:hover{
+	background: #5da5a2;
+	position: absolute;
+}
+
+nav ul li a .inicio{
+	background: #0e5061;
+}
+nav ul li a .nosotros{
+	background: #f25751;
+}
+nav ul li a .servicios {
+	background: #5da5a2;
+}
+nav ul li a .portafolio {
+	background: #3f4459;
+}
+nav ul li a .contactos {
+	background: #37a4d9;
+}
